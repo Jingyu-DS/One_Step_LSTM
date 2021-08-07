@@ -51,8 +51,8 @@ def perform_LSTM(feature_name, layer=4):
   # train_noise_X = add_noise(trainX)
   # train_noise_Y = add_noise(trainY)
 
-  trainX = numpy.reshape(trainX, (trainX.shape[0], 1, trainX.shape[1]))
-  testX = numpy.reshape(testX, (testX.shape[0], 1, testX.shape[1]))
+  trainX = np.reshape(trainX, (trainX.shape[0], 1, trainX.shape[1]))
+  testX = np.reshape(testX, (testX.shape[0], 1, testX.shape[1]))
   
   # create and fit the LSTM network
   model = Sequential()
